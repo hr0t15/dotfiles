@@ -1,0 +1,58 @@
+{
+  "title": "mapping rules for Screenshot",
+  "rules": [
+    {
+      "description": "F11 to Command+Shift+5",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f11"
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": ["left_command", "left_shift"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn+[ to cmd+shift+5",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": { "mandatory": ["fn"] }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": ["left_command", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "fn+¥ to cmd+shift+4",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "international3",
+            "modifiers": { "mandatory": ["fn"] }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": ["left_command", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

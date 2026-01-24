@@ -1,0 +1,5 @@
+alias ll='ls -lG'
+alias ls='ls -G'
+alias la='ls -laG'
+
+export PATH="$HOME/.local/bin:$PATH"

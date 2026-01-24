@@ -1,0 +1,74 @@
+{
+  "title": "JIS: underscore key outputs backslash, Shift+underscore stays underscore",
+  "rules": [
+    {
+      "description": "international1 (underscore/ろ) alone -> Option+international3 (yen) = backslash",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "international1",
+            "modifiers": { "optional": ["any"] }
+          },
+          "to": [
+            {
+              "key_code": "international3",
+              "modifiers": ["option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "ke_shift_pressed",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Track Shift state (for the rule above)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "left_shift" },
+          "to": [{ "key_code": "left_shift" }],
+          "to_after_key_up": [
+            { "set_variable": { "name": "ke_shift_pressed", "value": 0 } }
+          ],
+          "to_if_alone": [{ "key_code": "left_shift" }],
+          "parameters": { "basic.to_if_alone_timeout_milliseconds": 250 },
+          "conditions": []
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "left_shift", "modifiers": { "optional": ["any"] } },
+          "to": [
+            { "set_variable": { "name": "ke_shift_pressed", "value": 1 } },
+            { "key_code": "left_shift" }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "right_shift" },
+          "to": [{ "key_code": "right_shift" }],
+          "to_after_key_up": [
+            { "set_variable": { "name": "ke_shift_pressed", "value": 0 } }
+          ],
+          "to_if_alone": [{ "key_code": "right_shift" }],
+          "parameters": { "basic.to_if_alone_timeout_milliseconds": 250 },
+          "conditions": []
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "right_shift", "modifiers": { "optional": ["any"] } },
+          "to": [
+            { "set_variable": { "name": "ke_shift_pressed", "value": 1 } },
+            { "key_code": "right_shift" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
