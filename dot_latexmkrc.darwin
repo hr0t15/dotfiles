@@ -1,0 +1,23 @@
+#!/usr/bin/env perl
+
+# LuaLaTeXを使用
+$pdf_mode = 4;  # 4 = lualatex
+$lualatex = 'lualatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S';
+
+# ビューアにSkimを設定
+$pvc_view_file_via_temporary = 0;
+$pdf_previewer = 'open -ga /Applications/Skim.app';
+
+# 自動更新モード時の設定
+$pdf_update_method = 0;  # Skimは自動リロードするので0でOK
+
+# 中間ファイルの出力先（オプション）
+# $out_dir = 'build';
+
+# BibTeXの設定（使用する場合）
+$bibtex_use = 2;  # bibtexまたはbiber
+
+# 文字コード設定
+$latex = 'platex %O -synctex=1 -interaction=nonstopmode -kanji=utf8 %S';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+
