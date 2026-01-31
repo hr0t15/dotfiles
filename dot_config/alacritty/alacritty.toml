@@ -1,0 +1,8 @@
+# importのみ行う。
+# リストの後に置いたファイルが優先順位が高くなる。
+[general]
+import = [
+  "./alacritty_common.toml",
+  "./alacritty_windows.toml"
+  # "./alacritty_macos.toml"
+]

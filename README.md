@@ -35,3 +35,4 @@ sh -c "$(curl -fsLS get.chezmoi.io)"
 - 参考URL
   - [https://www.chezmoi.io/user-guide/machines/linux/](https://www.chezmoi.io/user-guide/machines/linux/) 
   - [https://www.chezmoi.io/user-guide/templating/](https://www.chezmoi.io/user-guide/templating/)
+  

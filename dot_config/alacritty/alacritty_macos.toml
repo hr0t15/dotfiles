@@ -1,0 +1,65 @@
+
+
+# 
+# https://alacritty.org/config-alacritty.html
+# https://maku.blog/p/p9ppdqy/
+
+[general]
+live_config_reload = true
+
+[window]
+# ウィンドウサイズ
+dimensions = { columns = 120, lines = 48 }
+# 画面端のパディング
+padding = { x = 4, y = 2 }
+# 背景を透過させる
+opacity = 0.9
+
+[colors.primary]
+# 背景色
+background = "#000055"
+
+[colors]
+# カーソル色
+cursor = { text = "CellBackground", cursor = "#00ff00" }
+# VI モードのカーソル色
+vi_mode_cursor = { text = "CellBackground", cursor = "#ff0000" }
+# 選択範囲の色
+selection = { text = "CellBackground", background = "#ffaaaa" }
+
+[cursor]
+# カーソルを点滅させる
+style = { shape = "Beam", blinking = "On" }
+# 点滅のインターバル
+blink_interval = 500
+# 点滅を停止するまでの秒数（0: 停止しない）
+blink_timeout = 0
+
+
+[font]
+
+# フォント指定
+# normal = { family = "Consolas", style = "Regular" }
+normal = { family = "HackGen", style = "Regular" }
+
+# フォントサイズ（デフォルトは 11.25）
+size = 14
+
+offset = { x = 1, y = 2 }
+
+
+[selection]
+save_to_clipboard = false
+
+[mouse]
+bindings = [
+    # 選択中に右クリック → コピー
+    { mouse = "Right", action = "Copy" },
+    # 中クリック（ホイールクリック） → ペースト
+    { mouse = "Middle", action = "Paste" },
+]
+
+[keyboard]
+bindings = [
+    { key = "V", mods = "Control", action = "Paste" },
+]

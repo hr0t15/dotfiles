@@ -1,0 +1,8 @@
+[font]
+# フォント指定
+normal = { family = "HackGen", style = "Regular" }
+
+# フォントサイズ（デフォルトは 11.25）
+size = 14
+
+offset = { x = 1, y = 2 }

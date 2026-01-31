@@ -1,0 +1,62 @@
+[general]
+live_config_reload = true
+
+
+[window]
+# ウィンドウサイズ
+dimensions = { columns = 120, lines = 48 }
+# 画面端のパディング
+padding = { x = 4, y = 2 }
+# 背景を透過させる
+opacity = 0.92
+
+# アプリ/シェルからのタイトル変更を受け入れる
+dynamic_title = true
+# 固定タイトル
+title = "Alacritty"
+
+[colors.primary]
+# 背景色
+background = "#141425"
+
+[colors]
+# カーソル色
+cursor = { text = "CellBackground", cursor = "#00ffff" }
+# 選択範囲の色
+selection = { text = "CellBackground", background = "#e0ffff" }
+
+# viモードのカーソル色
+vi_mode_cursor = { text = "CellBackground", cursor = "#ff0000" }
+
+
+[cursor]
+# カーソルを点滅させる
+style = { shape = "Beam", blinking = "On" }
+# 点滅のインターバル
+blink_interval = 500
+# 点滅を停止するまでの秒数（0: 停止しない）
+blink_timeout = 0
+
+
+[font]
+# フォント指定
+normal = { family = "Consolas", style = "Regular" }
+
+
+[selection]
+save_to_clipboard = false
+
+
+[keyboard]
+bindings = [
+    { key = "V", mods = "Control", action = "Paste" },
+]
+
+
+[mouse]
+bindings = [
+    # 選択中に右クリック → コピー
+    { mouse = "Right", action = "Copy" },
+    # 中クリック（ホイールクリック） → ペースト
+    { mouse = "Middle", action = "Paste" },
+]
