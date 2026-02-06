@@ -2,6 +2,12 @@
 
 このリポジトリは、[chezmoi](https://www.chezmoi.io/) により一元的に管理しているdotfileを格納している場所である。
 
+## 依存関係
+
+### Ghostty
+
+- フォントとして、HackGenを使っている。
+
 ## chezmoiのインストール
 
 ### MacOS
@@ -85,4 +91,3 @@ chezmoi cd
 - 参考URL
   - [https://www.chezmoi.io/user-guide/machines/linux/](https://www.chezmoi.io/user-guide/machines/linux/) 
   - [https://www.chezmoi.io/user-guide/templating/](https://www.chezmoi.io/user-guide/templating/)
-  
