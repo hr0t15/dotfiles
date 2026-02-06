@@ -4,26 +4,44 @@
 # Font
 # ----------------------------------------------------------------
 # font-family = JetBrainsMonoNL Nerd Font Mono
+font-family = HackGen
 # font-feature = -dlig
-font-size = 16
+font-size = 20
 
 # ----------------------------------------------------------------
 # Color
 # ----------------------------------------------------------------
-background = #0A1731
-foreground = #BFEFEC
-background-opacity = 0.98
+theme = Dark Pastel
+#theme = Liquid Carbon Transparent
+#theme = Monokai Remastered
+#theme = Monokai Vivid
+#theme = Symfonic
+
+# 背景色
+background = #01021c
+
+# 文字色
+#foreground = #BFEFEC
+
+background-opacity = 0.85
 selection-clear-on-typing = true
 selection-clear-on-copy = false
 
 # ----------------------------------------------------------------
 # Window
 # ----------------------------------------------------------------
-window-padding-x = 10
-window-padding-y = 10
-window-padding-balance = true
 window-height = 48
-window-width = 144
+window-width = 120
+
+# 左右の余白（ポイント単位）
+window-padding-x = 16
+
+# 上下の余白（ポイント単位）
+window-padding-y = 48
+
+# 余白を中央揃えにする（ウィンドウサイズがセルの倍数でない場合）
+window-padding-balance = true
+
 
 # ----------------------------------------------------------------
 # Cursor
