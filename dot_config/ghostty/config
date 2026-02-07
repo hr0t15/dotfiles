@@ -23,7 +23,7 @@ background = #01021c
 # 文字色
 #foreground = #BFEFEC
 
-background-opacity = 0.85
+background-opacity = 0.9
 selection-clear-on-typing = true
 selection-clear-on-copy = false
 
