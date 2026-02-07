@@ -1,0 +1,31 @@
+{
+  "title": "Space to Open in Finder/Path Finder",
+  "rules": [
+    {
+      "description": "スペースキーで選択項目を開く (Finder/Path Finder)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar"
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": ["command"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$",
+                "^com\\.cocoatech\\.PathFinder$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
