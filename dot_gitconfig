@@ -3,3 +3,5 @@
 	email = hr0t15.m@gmail.com
 [init]
 	defaultBranch = main
+[alias]
+	tree = log --graph --pretty=format:'%x09%C(auto) %h %x09%C(auto)%s %d'	
